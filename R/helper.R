@@ -10,15 +10,8 @@ strToCoord<-function(coordStr){
 }
 
 
+strToCoord("A10")
 
-#gsub("[[:digit:]]","","A1")
 
-#gsub
-
-StrToCoord("A12")
-
-strsplit("A1","")
-
-as.list(substring("A1",1:2,1:2))
 
 

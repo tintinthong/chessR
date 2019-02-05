@@ -8,26 +8,22 @@ game <- setClass(
     bPoints="integer",
     wTimeLimit="numeric",
     bTimeLimit="numeric",
-    state="character", #standard, check, checkmate
+    state="character", #(standard, check, checkmate)
     turn="character",
-    activePiece="list"
+    activePiece="character",
+    coordList="list"
   ),
 
   prototype=list(
     wPoints=0,
     bPoints=0,
     time=0,
-    state="normal",
-    turn="white"
-    #,
-    #activePiece=as.list(c("e",5))
-  ),
-  check=function(object)
-  {
-
-    return(TRUE)
-  },
-  contains="board"
+    state="standard",
+    turn="white",
+    activePiece="e5",
+    coordList=strToCoord(activePiece)
+  )
 )
+
 
 

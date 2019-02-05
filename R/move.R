@@ -1,28 +1,14 @@
-setGeneric(name="touch",
-           def=function(obj,...)
+setGeneric(name="move",
+           def=function(obj,...) #always include dots
            {
-             standardGeneric("touch")
+             standardGeneric("move")
+             #generically update game class
            }
 )
 
-
-setMethod(f="touch",
-          signature="game",
-          definition=function(obj,coordStr,...)
-          {
-            coordLs<-strToCoord(coordStr)
-
-            return(obj)
-
-
-          }
-
-)
-
-
-setMethod(f="select",
-          signature="board",
-          definition=function(obj,xCoord,yCoord,...)
+setMethod(f="move",
+          signature="pawn",
+          definition=function(obj,...)
           {
             if(is.na(obj@mat[xCoord,yCoord])){
               print("Selected coordinate without piece")
