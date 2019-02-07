@@ -20,7 +20,7 @@ setMethod (
   f="draw",
   signature="board",
   definition=function(object){
-    createBoard(object@xlen,object@ylen)
+    drawBoard(object@xlen,object@ylen)
   }
 
 )

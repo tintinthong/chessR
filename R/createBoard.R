@@ -1,4 +1,4 @@
-#' createBoard
+#' drawBoard
 #'
 #' @param x A number.
 #' @param y A number.
@@ -8,7 +8,7 @@
 #' add(100) sdfs
 #' @import ggplot2
 
-createBoard<-function(numberCol,numberRow){
+drawBoard<-function(numberCol,numberRow){
   df<-expand.grid(1:numberCol,1:numberRow)
   colnames(df)[1]<-"col"
   colnames(df)[2]<-"row"
@@ -28,5 +28,11 @@ createBoard<-function(numberCol,numberRow){
   ggplot(df, aes(LETTERS[df$col], row)) +geom_tile(aes(fill=colour),color="black",show.legend=FALSE)+scale_fill_manual(values=c("black","white"))+labs(x="Rows",y="Cols")+annotate("point", x = 5, y = 4, colour = "blue")
 
 }
+
+drawPieces<-function(){
+
+}
+
+
 
 

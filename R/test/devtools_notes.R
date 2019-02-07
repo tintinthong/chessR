@@ -7,7 +7,9 @@
 
 
 
-getswifty<-function(){
+getSchwifty<-function(){
   devtools::document()
   devtools::load_all(".")
 }
+
+
