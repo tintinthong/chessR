@@ -1,18 +1,23 @@
-pawn <- setClass(
-
-  "pawn",
-
-  slots = c(
-    turn="character",
-    activePiece="character",
-    coordList="list"
-  ),
-  contains="game" #do know whether board
-)
-
-setValidity("pawn",function(obj){
-
-
-})
-
-
+# pawn <- setClass(
+#
+#   "pawn",
+#
+#   slots = c(
+#     points="integer",
+#     img= "character",
+# #     justin="charcter"
+#   ),
+#
+#   prototype=list(
+#     points=as.integer(1),
+#     img="/img/pawn.png"
+#   )
+# )
+#
+# setValidity("pawn",function(object){
+#   NULL
+# })
+#
+#
+# #,
+# #contains="game"

@@ -10,10 +10,10 @@ setMethod(f="move",
           signature="pawn",
           definition=function(obj,...)
           {
-            if(is.na(obj@mat[xCoord,yCoord])){
+            #if(is.na(obj@mat[xCoord,yCoord])){
               print("Selected coordinate without piece")
-              return(FALSE)
-            }
+            #  return(FALSE)
+            #}
             return(obj)
           }
 
