@@ -25,6 +25,8 @@ createBoard<-function(numberCol,numberRow){
   }
   df$colour<-as.factor(df$colour)
 
-  ggplot(df, aes(LETTERS[df$col], row)) +geom_tile(aes(fill=colour),color="black",show.legend=FALSE)+scale_fill_manual(values=c("black","white"))+labs(x="Rows",y="Cols")
+  ggplot(df, aes(LETTERS[df$col], row)) +geom_tile(aes(fill=colour),color="black",show.legend=FALSE)+scale_fill_manual(values=c("black","white"))+labs(x="Rows",y="Cols")+annotate("point", x = 5, y = 4, colour = "blue")
 
 }
+
+
