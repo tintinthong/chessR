@@ -1,6 +1,12 @@
-#board State
-#you can just assign values by calling board()
-# <- board() to make instance of object or new
+#' Board Class
+#'
+#' @param x A number.
+#' @param y A number.
+#' @return The sum of \code{x} and \code{y}.
+#' @examples
+#' add(1, 1)
+#' add(100) sdfs
+#' @include game.R
 
 
 board <- setClass(
@@ -16,7 +22,8 @@ board <- setClass(
 
   prototype=list(
     theme=as.integer(1)
-  ),
+  )
+  ,
   contains="game"
 )
 

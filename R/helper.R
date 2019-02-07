@@ -19,8 +19,6 @@ CoordListToCoordVec<-function(CoordList){
 
 
 
-
-
 shift <- function(x, n = 1) {
   if (n == 0) x else c(tail(x, -n), head(x, n))
 }
