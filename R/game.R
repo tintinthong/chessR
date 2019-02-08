@@ -20,6 +20,10 @@ game <- setClass(
     wTimeLimit="numeric",
     bTimeLimit="numeric",
 
+    #board
+    #xlen="integer"
+    #ylen="integer"
+
     turn="character",
     moveNumber="numeric",
     wPoints= "numeric",
@@ -59,11 +63,17 @@ game <- setClass(
       dimnames=list(8:1,tolower(LETTERS[1:8]))
     )
 
-  ),
-  validity=function(object){
-     NULL
-  }
+  )
 )
+
+
+#validity has a problem
+
+# setValidity("board",
+#                      method=function(object){
+#                        print("waka")
+#                      }
+# )
 
 
 setMethod (
@@ -71,11 +81,14 @@ setMethod (
   signature="game",
   definition=function(.Object){
 
-    validObject(.Object) # call of the inspector
+
+    #validObject(.Object) # call of the inspector
     return(.Object)
   }
 
 )
+
+
 
 
 

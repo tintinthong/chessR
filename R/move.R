@@ -8,6 +8,7 @@
 #' add(1, 1)
 #' add(100) sdfs
 #' @import ggplot2
+#' @export move
 
 setGeneric(name="move",
            def=function(object,...) #always include dots
@@ -20,6 +21,7 @@ setMethod(f="move",
           signature="pawn",
           definition=function(object,coordVec,coordVec2)
           {
+            #check if selected position is in the board
             #check that it is the correct turn or side piece is selected
 
             #check that there is a non-empty space

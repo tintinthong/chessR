@@ -27,11 +27,11 @@ board <- setClass(
   contains="game"
 )
 
-setValidity("board",
-  method=function(object){
-    NULL
-  }
-)
+# setValidity("board",
+#   method=function(object){
+#     return(NULL)
+#   }
+# )
 
 
 setMethod (

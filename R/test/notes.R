@@ -1,4 +1,6 @@
 #
+#assign("boardPlot",value,envir=globalenv())
+
 # Ctrl+Shift+C
 #class(bubba) <- append(class(bubba),"Flamboyancy")
 #

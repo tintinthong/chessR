@@ -7,6 +7,7 @@
 #' add(1, 1)
 #' add(100) sdfs
 #' @include game.R
+#' @export draw
 
 
 setGeneric(name="draw",
@@ -21,6 +22,7 @@ setMethod (
   signature="board",
   definition=function(object){
     drawBoard(object@xlen,object@ylen)
+
   }
 
 )
